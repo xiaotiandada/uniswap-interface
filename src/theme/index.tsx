@@ -191,11 +191,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #24272c;
+  background-color: #5E5E5E;
   background-image: url(${BestswapBackground});
   background-size: cover;
-  background-position: bottom;
-  background-repeat: repeat-y;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 * {
@@ -213,7 +213,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on;
-  background-color: #24272c;
+  background-color: #5E5E5E;
 }
 `
 

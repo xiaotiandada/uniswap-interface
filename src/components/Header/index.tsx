@@ -391,6 +391,7 @@ export default function Header() {
         <HeaderElementWrap>
           <Settings />
           <Menu />
+          {/* <I18nSwitch /> */}
         </HeaderElementWrap>
       </HeaderControls>
     </HeaderFrame>

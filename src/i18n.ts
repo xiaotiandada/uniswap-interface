@@ -20,4 +20,7 @@ i18next
     interpolation: { escapeValue: false }
   })
 
+// setting to english by default
+i18next.changeLanguage('en')  
+
 export default i18next

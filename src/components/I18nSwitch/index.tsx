@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import styled from 'styled-components'
 import { lighten } from 'polished'
-import i18n from '../../i18n';
+import i18n from '../../i18n'
 import { ReactComponent as I18nIcon } from '../../assets/svg/i18n.svg'
 // import { useActiveWeb3React } from '../../hooks'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
@@ -91,7 +91,7 @@ export default function I18nSwitch() {
   // const { account } = useActiveWeb3React()
 
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
+    i18n.changeLanguage(lng)
   }
 
   const node = useRef<HTMLDivElement>()
@@ -108,13 +108,13 @@ export default function I18nSwitch() {
 
       {open && (
         <MenuFlyout>
-          <MenuItem >
+          <MenuItem>
             <div onClick={() => changeLanguage('en')}>English</div>
           </MenuItem>
-          <MenuItem >
+          <MenuItem>
             <div onClick={() => changeLanguage('zh-CN')}>简体中文</div>
           </MenuItem>
-          <MenuItem >
+          <MenuItem>
             <div onClick={() => changeLanguage('zh-TW')}>繁體中文</div>
           </MenuItem>
         </MenuFlyout>

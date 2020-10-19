@@ -222,12 +222,12 @@ const StyledNavLink = styled(NavLink).attrs({
   &.${activeClassName} {
     border-radius: 12px;
     font-weight: bold;
-    color: #fec600;
+    color: #ffffff;
   }
 
   :hover,
   :focus {
-    color: #fec600;
+    color: #ffffff;
   }
 
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
@@ -253,12 +253,12 @@ const StyledExternalLink = styled(ExternalLink).attrs({
   &.${activeClassName} {
     border-radius: 12px;
     font-weight: bold;
-    color: #fec600;
+    color: #ffffff;
   }
 
   :hover,
   :focus {
-    color: #fec600;
+    color: #ffffff;
   }
 
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { BookOpen, Code, Info, MessageCircle, PieChart } from 'react-feather'
+import { BookOpen, Info, MessageCircle, Twitter, Send } from 'react-feather'
 import styled from 'styled-components'
 import { lighten } from 'polished'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
@@ -52,7 +52,7 @@ const StyledMenu = styled.div`
 `
 
 const MenuFlyout = styled.span`
-  min-width: 8.125rem;
+  min-width: 12.125rem;
   background-color: ${({ theme }) => theme.bg3};
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04),
     0px 24px 32px rgba(0, 0, 0, 0.01);
@@ -105,25 +105,25 @@ export default function Menu() {
 
       {open && (
         <MenuFlyout>
-          <MenuItem id="link">
-            <Info size={14} />
-            About
+          <MenuItem id="link" href="https://t.me/BestswapClub">
+            <Send size={14} />
+            Telegram
           </MenuItem>
-          <MenuItem id="link">
-            <BookOpen size={14} />
-            Docs
-          </MenuItem>
-          <MenuItem id="link">
-            <Code size={14} />
-            Code
-          </MenuItem>
-          <MenuItem id="link">
+          <MenuItem id="link" href="https://discord.com/invite/Tztg95k">
             <MessageCircle size={14} />
             Discord
           </MenuItem>
-          <MenuItem id="link">
-            <PieChart size={14} />
-            Analytics
+          <MenuItem id="link" href="https://medium.com/@Bestswap_com">
+            <BookOpen size={14} />
+            Medium
+          </MenuItem>
+          <MenuItem id="link" href="https://twitter.com/Bestswap_com">
+            <Twitter size={14} />
+            Twitter
+          </MenuItem>
+          <MenuItem id="link" href="https://t.me/bestswap_com">
+            <Info size={14} />
+            Announcement
           </MenuItem>
           {account && (
             <ButtonPrimary onClick={openClaimModal} padding="8px 16px" width="100%" borderRadius="12px" mt="0.5rem">

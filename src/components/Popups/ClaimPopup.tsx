@@ -20,7 +20,7 @@ import { CardBGImage, CardNoise } from '../earn/styled'
 
 const StyledClaimPopup = styled(AutoColumn)`
   background: radial-gradient(76.02% 75.41% at 1.84% 0%, #fe2500 0%, #fea000 100%);
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 1.5rem;
   overflow: hidden;
   position: relative;
@@ -102,7 +102,7 @@ export default function ClaimPopup() {
             </TYPE.subHeader>
           </AutoColumn>
           <AutoColumn style={{ zIndex: 10 }} justify="center">
-            <ButtonPrimary padding="8px" borderRadius="8px" width={'fit-content'} onClick={toggleSelfClaimModal}>
+            <ButtonPrimary padding="8px" borderRadius="6px" width={'fit-content'} onClick={toggleSelfClaimModal}>
               Claim your BEST tokens
             </ButtonPrimary>
           </AutoColumn>

@@ -16,7 +16,7 @@ import { ButtonError } from '../Button'
 const Wrapper = styled.div<{ error: boolean }>`
   background: ${({ theme }) => transparentize(0.6, theme.bg3)};
   padding: 0.75rem;
-  border-radius: 20px;
+  border-radius: 6px;
 `
 
 const WarningContainer = styled.div`
@@ -25,7 +25,7 @@ const WarningContainer = styled.div`
   padding: 1rem;
   background: rgba(242, 150, 2, 0.05);
   border: 1px solid #f3841e;
-  border-radius: 20px;
+  border-radius: 6px;
   overflow: auto;
 `
 
@@ -137,7 +137,7 @@ export default function TokenWarningModal({
               padding="0.5rem 1rem"
               className="token-dismiss-button"
               style={{
-                borderRadius: '10px'
+                borderRadius: '6px'
               }}
               onClick={() => {
                 onConfirm()

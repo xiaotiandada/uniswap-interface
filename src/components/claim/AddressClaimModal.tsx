@@ -124,7 +124,7 @@ export default function AddressClaimModal({ isOpen, onDismiss }: { isOpen: boole
               disabled={!isAddress(parsedAddress ?? '') || !hasAvailableClaim}
               padding="16px 16px"
               width="100%"
-              borderRadius="12px"
+              borderRadius="6px"
               mt="1rem"
               onClick={onClaim}
             >

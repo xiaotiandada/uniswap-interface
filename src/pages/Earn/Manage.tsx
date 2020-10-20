@@ -43,7 +43,7 @@ const PositionInfo = styled(AutoColumn)<{ dim: any }>`
 `
 
 const BottomSection = styled(AutoColumn)`
-  border-radius: 12px;
+  border-radius: 6px;
   width: 100%;
   position: relative;
 `
@@ -202,7 +202,7 @@ export default function Manage({
               </RowBetween>
               <ButtonPrimary
                 padding="8px"
-                borderRadius="8px"
+                borderRadius="6px"
                 width={'fit-content'}
                 as={Link}
                 to={`/add/${currencyA && currencyId(currencyA)}/${currencyB && currencyId(currencyB)}`}
@@ -269,7 +269,7 @@ export default function Manage({
                 {stakingInfo?.earnedAmount && JSBI.notEqual(BIG_INT_ZERO, stakingInfo?.earnedAmount?.raw) && (
                   <ButtonEmpty
                     padding="8px"
-                    borderRadius="8px"
+                    borderRadius="6px"
                     width="fit-content"
                     onClick={() => setShowClaimRewardModal(true)}
                   >
@@ -311,7 +311,7 @@ export default function Manage({
 
         {!showAddLiquidityButton && (
           <DataRow style={{ marginBottom: '1rem' }}>
-            <ButtonPrimary padding="8px" borderRadius="8px" width="160px" onClick={handleDepositClick}>
+            <ButtonPrimary padding="8px" borderRadius="6px" width="160px" onClick={handleDepositClick}>
               {stakingInfo?.stakedAmount?.greaterThan(JSBI.BigInt(0)) ? 'Deposit' : 'Deposit BEST-V2 LP Tokens'}
             </ButtonPrimary>
 
@@ -319,7 +319,7 @@ export default function Manage({
               <>
                 <ButtonPrimary
                   padding="8px"
-                  borderRadius="8px"
+                  borderRadius="6px"
                   width="160px"
                   onClick={() => setShowUnstakingModal(true)}
                 >

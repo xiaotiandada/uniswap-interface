@@ -26,7 +26,7 @@ const PageWrapper = styled(AutoColumn)`
 
 const ProposalInfo = styled(AutoColumn)`
   border: 1px solid ${({ theme }) => theme.bg4};
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 1.5rem;
   position: relative;
   max-width: 640px;
@@ -169,7 +169,7 @@ export default function VotePage({
               <ButtonPrimary
                 style={{ width: 'fit-content' }}
                 padding="8px"
-                borderRadius="8px"
+                borderRadius="6px"
                 onClick={() => setShowModal(true)}
               >
                 Unlock Voting
@@ -185,7 +185,7 @@ export default function VotePage({
           <RowFixed style={{ width: '100%', gap: '12px' }}>
             <ButtonPrimary
               padding="8px"
-              borderRadius="8px"
+              borderRadius="6px"
               onClick={() => {
                 setSupport(true)
                 setShowModal(true)
@@ -195,7 +195,7 @@ export default function VotePage({
             </ButtonPrimary>
             <ButtonPrimary
               padding="8px"
-              borderRadius="8px"
+              borderRadius="6px"
               onClick={() => {
                 setSupport(false)
                 setShowModal(true)

@@ -41,7 +41,7 @@ const PopoverContainer = styled.div<{ show: boolean }>`
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04),
     0px 24px 32px rgba(0, 0, 0, 0.01);
   color: ${({ theme }) => theme.text2};
-  border-radius: 0.5rem;
+  border-radius: 6px;
   padding: 1rem;
   display: grid;
   grid-template-rows: 1fr;
@@ -182,7 +182,7 @@ const ListRow = memo(function ListRow({ listUrl, onBack }: { listUrl: string; on
           style={{
             width: '2rem',
             padding: '.8rem .35rem',
-            borderRadius: '12px',
+            borderRadius: '6px',
             fontSize: '14px',
             marginRight: '0.5rem'
           }}
@@ -210,7 +210,7 @@ const ListRow = memo(function ListRow({ listUrl, onBack }: { listUrl: string; on
         <ButtonPrimary
           disabled={true}
           className="select-button"
-          style={{ width: '5rem', minWidth: '5rem', padding: '0.5rem .35rem', borderRadius: '12px', fontSize: '14px' }}
+          style={{ width: '5rem', minWidth: '5rem', padding: '0.5rem .35rem', borderRadius: '6px', fontSize: '14px' }}
         >
           Selected
         </ButtonPrimary>
@@ -222,7 +222,7 @@ const ListRow = memo(function ListRow({ listUrl, onBack }: { listUrl: string; on
               width: '5rem',
               minWidth: '4.5rem',
               padding: '0.5rem .35rem',
-              borderRadius: '12px',
+              borderRadius: '6px',
               fontSize: '14px'
             }}
             onClick={selectThisList}
@@ -238,7 +238,7 @@ const ListRow = memo(function ListRow({ listUrl, onBack }: { listUrl: string; on
 const AddListButton = styled(ButtonSecondary)`
   max-width: 4rem;
   margin-left: 1rem;
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 10px 18px;
 `
 
@@ -348,7 +348,7 @@ export function ListSelect({ onDismiss, onBack }: { onDismiss: () => void; onBac
             value={listUrlInput}
             onChange={handleInput}
             onKeyDown={handleEnterKey}
-            style={{ height: '2.75rem', borderRadius: 12, padding: '12px' }}
+            style={{ height: '2.75rem', borderRadius: 6, padding: '12px' }}
           />
           <AddListButton onClick={handleAddList} disabled={!validUrl}>
             Add

@@ -200,7 +200,7 @@ export default function FullPositionCard({ pair, border }: PositionCardProps) {
           <RowFixed gap="8px">
             <ButtonEmpty
               padding="6px 8px"
-              borderRadius="12px"
+              borderRadius="6px"
               width="fit-content"
               onClick={() => setShowMore(!showMore)}
             >
@@ -275,7 +275,7 @@ export default function FullPositionCard({ pair, border }: PositionCardProps) {
               </Text>
             </FixedHeightRow>
 
-            <ButtonSecondary padding="8px" borderRadius="8px">
+            <ButtonSecondary padding="8px" borderRadius="6px">
               <ExternalLink
                 style={{ width: '100%', textAlign: 'center' }}
                 href={`https://uniswap.info/account/${account}`}
@@ -286,7 +286,7 @@ export default function FullPositionCard({ pair, border }: PositionCardProps) {
             <RowBetween marginTop="10px">
               <ButtonPrimary
                 padding="8px"
-                borderRadius="8px"
+                borderRadius="6px"
                 as={Link}
                 to={`/add/${currencyId(currency0)}/${currencyId(currency1)}`}
                 width="48%"
@@ -295,7 +295,7 @@ export default function FullPositionCard({ pair, border }: PositionCardProps) {
               </ButtonPrimary>
               <ButtonPrimary
                 padding="8px"
-                borderRadius="8px"
+                borderRadius="6px"
                 as={Link}
                 width="48%"
                 to={`/remove/${currencyId(currency0)}/${currencyId(currency1)}`}

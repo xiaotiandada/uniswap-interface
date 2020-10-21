@@ -332,7 +332,7 @@ export default function Header() {
           <StyledNavLink id={`stake-nav-link`} to={'/vote'}>
             Vote
           </StyledNavLink> */}
-          <StyledExternalLink id={`stake-nav-link`} href={'https://practical-leakey-72616f.netlify.app/farms'}>
+          <StyledExternalLink id={`stake-nav-link`} href={'https://practical-leakey-72616f.netlify.app'}>
             Farm <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>
           </StyledExternalLink>
         </HeaderLinks>

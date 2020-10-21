@@ -197,9 +197,9 @@ const UniIcon = styled.div`
   height: 40px;
   width: auto;
   transition: transform 0.3s ease;
-  :hover {
+  /* :hover {
     transform: rotate(-5deg);
-  }
+  } */
 `
 
 const activeClassName = 'ACTIVE'
@@ -249,6 +249,7 @@ const StyledExternalLink = styled(ExternalLink).attrs({
   width: fit-content;
   margin: 0 12px;
   font-weight: 500;
+  position: relative;
 
   &.${activeClassName} {
     border-radius: 6px;
@@ -305,7 +306,7 @@ export default function Header() {
       <HeaderRow>
         <Title href=".">
           <UniIcon>
-            <img height="40px" src={isDark ? LogoDark : Logo} alt="logo" />
+            <img height="40px" style={{ marginTop: -8 }} src={isDark ? LogoDark : Logo} alt="logo" />
           </UniIcon>
         </Title>
         <HeaderLinks>
@@ -331,8 +332,8 @@ export default function Header() {
           <StyledNavLink id={`stake-nav-link`} to={'/vote'}>
             Vote
           </StyledNavLink> */}
-          <StyledExternalLink id={`stake-nav-link`} href={'https://practical-leakey-72616f.netlify.app/'}>
-            {t('mining')} <span style={{ fontSize: '11px' }}>↗</span>
+          <StyledExternalLink id={`stake-nav-link`} href={'https://practical-leakey-72616f.netlify.app/farms'}>
+            Farm <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>
           </StyledExternalLink>
         </HeaderLinks>
       </HeaderRow>

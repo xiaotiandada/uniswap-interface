@@ -35,21 +35,21 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  @media(max-width: 540px) {
+  @media (max-width: 540px) {
     justify-content: flex-start;
   }
 `
 
 const StyledLink = styled.a`
-  color: #F6C92A;
+  color: #f6c92a;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   line-height: 34px;
   &:hover {
-    color: #F6C92A;
+    color: #f6c92a;
   }
-  @media(max-width: 540px) {
+  @media (max-width: 540px) {
     padding-right: 16px;
   }
 `

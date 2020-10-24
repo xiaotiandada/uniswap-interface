@@ -30,6 +30,8 @@ import Vote from './Vote'
 import VotePage from './Vote/VotePage'
 import Footer from '../components/Footer/index'
 
+import { useInactiveListener } from '../hooks/useInactiveListener'
+
 const AppWrapper = styled.div`
   display: flex;
   flex-flow: column;
@@ -74,6 +76,7 @@ function TopLevelModals() {
 }
 
 export default function App() {
+  useInactiveListener()
   return (
     <Suspense fallback={null}>
       <Route component={GoogleAnalyticsReporter} />

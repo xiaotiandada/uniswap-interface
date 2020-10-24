@@ -28,12 +28,14 @@ import { OpenClaimAddressModalAndRedirectToSwap, RedirectPathToSwapOnly, Redirec
 
 import Vote from './Vote'
 import VotePage from './Vote/VotePage'
+import Footer from '../components/Footer/index'
 
 const AppWrapper = styled.div`
   display: flex;
   flex-flow: column;
   align-items: flex-start;
   overflow-x: hidden;
+  min-height: 100vh;
 `
 
 const HeaderWrapper = styled.div`
@@ -111,6 +113,7 @@ export default function App() {
           </Web3ReactManager>
           <Marginer />
         </BodyWrapper>
+        <Footer></Footer>
       </AppWrapper>
     </Suspense>
   )

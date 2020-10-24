@@ -28,12 +28,16 @@ import { OpenClaimAddressModalAndRedirectToSwap, RedirectPathToSwapOnly, Redirec
 
 import Vote from './Vote'
 import VotePage from './Vote/VotePage'
+import Footer from '../components/Footer/index'
+
+import { useInactiveListener } from '../hooks/useInactiveListener'
 
 const AppWrapper = styled.div`
   display: flex;
   flex-flow: column;
   align-items: flex-start;
   overflow-x: hidden;
+  min-height: 100vh;
 `
 
 const HeaderWrapper = styled.div`
@@ -72,6 +76,7 @@ function TopLevelModals() {
 }
 
 export default function App() {
+  useInactiveListener()
   return (
     <Suspense fallback={null}>
       <Route component={GoogleAnalyticsReporter} />
@@ -111,6 +116,7 @@ export default function App() {
           </Web3ReactManager>
           <Marginer />
         </BodyWrapper>
+        <Footer></Footer>
       </AppWrapper>
     </Suspense>
   )

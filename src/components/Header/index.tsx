@@ -237,7 +237,7 @@ const StyledNavLink = styled(NavLink).attrs({
 
 const StyledExternalLink = styled(ExternalLink).attrs({
   activeClassName
-})<{ isActive?: boolean }>`
+}) <{ isActive?: boolean }>`
   ${({ theme }) => theme.flexRowNoWrap}
   align-items: left;
   border-radius: 3rem;
@@ -334,6 +334,12 @@ export default function Header() {
           </StyledNavLink> */}
           <StyledExternalLink id={`stake-nav-link`} href={'https://bsc.bestswap.com/farm/'}>
             Farm <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>
+          </StyledExternalLink>
+          <StyledExternalLink id={`stake-nav-link`} href={'https://www.binance.org/en/bridge'}>
+            Bridge <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>
+          </StyledExternalLink>
+          <StyledExternalLink id={`stake-nav-link`} href={'https://uniscam-info-preview.netlify.app'}>
+            Analytics <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>
           </StyledExternalLink>
         </HeaderLinks>
       </HeaderRow>

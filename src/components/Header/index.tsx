@@ -338,7 +338,7 @@ export default function Header() {
           <StyledExternalLink id={`stake-nav-link`} href={'https://www.binance.org/en/bridge'}>
             {t('bridge')} <span style={{ fontSize: '11px' }}>↗</span>
           </StyledExternalLink>
-          <StyledExternalLink id={`stake-nav-link`} href={'https://uniscam-info-preview.netlify.app'}>
+          <StyledExternalLink id={`stake-nav-link`} href={'https://bsc.bestswap.com/info'}>
             Analytics <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>
           </StyledExternalLink>
         </HeaderLinks>

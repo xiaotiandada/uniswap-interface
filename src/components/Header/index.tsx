@@ -336,7 +336,7 @@ export default function Header() {
             Farm <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>
           </StyledExternalLink>
           <StyledExternalLink id={`stake-nav-link`} href={'https://www.binance.org/en/bridge'}>
-            Bridge <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>
+            {t('bridge')} <span style={{ fontSize: '11px' }}>↗</span>
           </StyledExternalLink>
           <StyledExternalLink id={`stake-nav-link`} href={'https://uniscam-info-preview.netlify.app'}>
             Analytics <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>

@@ -100,14 +100,15 @@ const HeaderElementWrap = styled.div`
 const HeaderRow = styled(RowFixed)`
   ${({ theme }) => theme.mediaWidth.upToMedium`
     width: 100%;
+    display: block;
   `};
 `
 
 const HeaderLinks = styled(Row)`
   justify-content: center;
   ${({ theme }) => theme.mediaWidth.upToMedium`
-    padding: 1rem 0 1rem 1rem;
-    justify-content: flex-end;
+    padding: 6px 0;
+    justify-content: space-between;
 `};
 `
 
@@ -187,6 +188,7 @@ const Title = styled.a`
   margin-right: 12px;
   ${({ theme }) => theme.mediaWidth.upToSmall`
     justify-self: center;
+    margin-right: 0;
   `};
   :hover {
     cursor: pointer;
@@ -231,7 +233,7 @@ const StyledNavLink = styled(NavLink).attrs({
   }
 
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
-    margin: 0 8px;
+    margin: 0;
   `}
 `
 
@@ -261,9 +263,8 @@ const StyledExternalLink = styled(ExternalLink).attrs({
   :focus {
     color: #ffffff;
   }
-
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
-    margin: 0 8px;
+    margin: 0;
   `}
 `
 
@@ -333,13 +334,13 @@ export default function Header() {
             Vote
           </StyledNavLink> */}
           <StyledExternalLink id={`stake-nav-link`} href={'https://bsc.bestswap.com/farm/'}>
-            Farm <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>
+            Farm <span>↗</span>
           </StyledExternalLink>
           <StyledExternalLink id={`stake-nav-link`} href={'https://www.binance.org/en/bridge'}>
-            {t('bridge')} <span style={{ fontSize: '11px' }}>↗</span>
+            {t('bridge')} <span>↗</span>
           </StyledExternalLink>
           <StyledExternalLink id={`stake-nav-link`} href={'https://bsc.bestswap.com/info'}>
-            Analytics <span style={{ fontSize: 11, position: 'absolute', right: -10 }}>↗</span>
+            Analytics <span>↗</span>
           </StyledExternalLink>
         </HeaderLinks>
       </HeaderRow>

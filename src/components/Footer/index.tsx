@@ -68,6 +68,9 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
   width: 100%;
+  ${({ theme }) => theme.mediaWidth.upToExtraSmall`
+    padding-bottom: 40px;
+  `}
 `
 const StyledFooterInner = styled.div`
   /* align-items: center; */

@@ -93,5 +93,6 @@
   "unknownError": "¡Ups! \nUn error desconocido ocurrió. \nActualice la página o visite desde otro navegador o dispositivo.",
   "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Se estima la producción. \nSi el precio cambia en más del {{percentage}}%, su transacción se revertirá.",
   "claiming": "Reclamando",
-  "best-v2-lp-tokens-are-required-once-youve-added-liquidity-to-the-symbolone-symboltwo-pool-you-can-stake-your-liquidity-tokens-on-this-page": "Se requieren tokens LP BEST-V2. \nUna vez que haya agregado liquidez al grupo {{symbolOne}} - {{symbolTwo}}, puede apostar sus tokens de liquidez en esta página."
+  "best-v2-lp-tokens-are-required-once-youve-added-liquidity-to-the-symbolone-symboltwo-pool-you-can-stake-your-liquidity-tokens-on-this-page": "Se requieren tokens LP BEST-V2. \nUna vez que haya agregado liquidez al grupo {{symbolOne}} - {{symbolTwo}}, puede apostar sus tokens de liquidez en esta página.",
+  "a-minimum-threshhold-of-1-of-the-total-best-supply-is-required-to-submit-proposals": "Se requiere un umbral mínimo del 1% del suministro total de BEST para presentar propuestas"
 }

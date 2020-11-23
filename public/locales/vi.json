@@ -91,5 +91,7 @@
   "noToken": "Không tìm thấy mã thông báo",
   "tokenSearchPlaceholder": "Tìm kiếm tên hoặc dán địa chỉ",
   "toleranceExplanation": "Việc hạ thấp giới hạn này sẽ giảm nguy cơ chạy trước của bạn. \nTuy nhiên, điều này làm cho nhiều khả năng giao dịch của bạn sẽ thất bại do biến động giá bình thường.",
-  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Sản lượng được ước tính. \nNếu giá thay đổi hơn {{percentage}}% thì giao dịch của bạn sẽ hoàn nguyên."
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Sản lượng được ước tính. \nNếu giá thay đổi hơn {{percentage}}% thì giao dịch của bạn sẽ hoàn nguyên.",
+  "claiming": "Yêu cầu bồi thường",
+  "best-v2-lp-tokens-are-required-once-youve-added-liquidity-to-the-symbolone-symboltwo-pool-you-can-stake-your-liquidity-tokens-on-this-page": "Mã thông báo BEST-V2 LP là bắt buộc. \nKhi bạn đã thêm tính thanh khoản vào nhóm {{SymbolOne}} - {{SymbolTwo}}, bạn có thể đặt cược mã thông báo thanh khoản của mình trên trang này."
 }

@@ -91,5 +91,7 @@
   "noToken": "Kein Token gefunden",
   "tokenSearchPlaceholder": "Suchen Sie den Namen oder fügen Sie die Adresse ein",
   "toleranceExplanation": "Wenn Sie diesen Grenzwert senken, verringert sich das Risiko von Frontrunning. \nDies erhöht jedoch die Wahrscheinlichkeit, dass Ihre Transaktion aufgrund normaler Preisbewegungen fehlschlägt.",
-  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Die Ausgabe wird geschätzt. \nWenn sich der Preis um mehr als {{percentage}}% ändert, wird Ihre Transaktion zurückgesetzt."
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Die Ausgabe wird geschätzt. \nWenn sich der Preis um mehr als {{percentage}}% ändert, wird Ihre Transaktion zurückgesetzt.",
+  "claiming": "Anspruch erheben",
+  "best-v2-lp-tokens-are-required-once-youve-added-liquidity-to-the-symbolone-symboltwo-pool-you-can-stake-your-liquidity-tokens-on-this-page": "BEST-V2 LP-Token sind erforderlich. \nSobald Sie dem {{symbolOne}} - {{symbolTwo}} Pool Liquidität hinzugefügt haben, können Sie Ihre Liquiditätstoken auf dieser Seite einsetzen."
 }

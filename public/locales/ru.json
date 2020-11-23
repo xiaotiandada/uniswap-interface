@@ -91,5 +91,7 @@
   "tokenSearchPlaceholder": "Найдите имя или вставьте адрес",
   "toleranceExplanation": "Снижение этого лимита снижает риск опережения. \nОднако это повышает вероятность того, что ваша транзакция не удастся из-за нормального движения цен.",
   "unknownError": "Ой! \nПроизошла неизвестная ошибка. \nОбновите страницу или перейдите в другой браузер или с другого устройства.",
-  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Производительность оценена. \nЕсли цена изменится более чем на {{percentage}}%, ваша транзакция будет отменена."
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Производительность оценена. \nЕсли цена изменится более чем на {{percentage}}%, ваша транзакция будет отменена.",
+  "claiming": "Требуя",
+  "best-v2-lp-tokens-are-required-once-youve-added-liquidity-to-the-symbolone-symboltwo-pool-you-can-stake-your-liquidity-tokens-on-this-page": "Требуются токены BEST-V2 LP. \nПосле того, как вы добавили ликвидность в пул {{symbolOne}} - {{symbolTwo}}, вы можете разместить свои токены ликвидности на этой странице."
 }

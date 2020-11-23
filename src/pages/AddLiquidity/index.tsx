@@ -265,7 +265,7 @@ export default function AddLiquidity({
     )
   }
 
-  const pendingText = `Supplying ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(6)} ${
+  const pendingText = `${t('supplying')} ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(6)} ${
     currencies[Field.CURRENCY_A]?.symbol
   } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(6)} ${currencies[Field.CURRENCY_B]?.symbol}`
 
@@ -319,7 +319,7 @@ export default function AddLiquidity({
             hash={txHash}
             content={() => (
               <ConfirmationModalContent
-                title={noLiquidity ? 'You are creating a pool' : 'You will receive'}
+                title={noLiquidity ? t('youAreCreatingAPool') : t('youWillReceive')}
                 onDismiss={handleDismissConfirmation}
                 topContent={modalHeader}
                 bottomContent={modalBottom}
@@ -334,13 +334,13 @@ export default function AddLiquidity({
                   <BlueCard>
                     <AutoColumn gap="10px">
                       <TYPE.link fontWeight={600} color={'primaryText1'}>
-                        You are the first liquidity provider.
+                        {t('you-are-the-first-liquidity-provider')}
                       </TYPE.link>
                       <TYPE.link fontWeight={400} color={'primaryText1'}>
-                        The ratio of tokens you add will set the price of this pool.
+                        {t('the-ratio-of-tokens-you-add-will-set-the-price-of-this-pool')}
                       </TYPE.link>
                       <TYPE.link fontWeight={400} color={'primaryText1'}>
-                        Once you are happy with the rate click supply to review.
+                        {t('once-you-are-happy-with-the-rate-click-supply-to-review')}
                       </TYPE.link>
                     </AutoColumn>
                   </BlueCard>
@@ -378,7 +378,7 @@ export default function AddLiquidity({
                 <LightCard padding="0px" borderRadius={'6px'}>
                   <RowBetween padding="1rem">
                     <TYPE.subHeader fontWeight={500} fontSize={14}>
-                      {noLiquidity ? 'Initial prices' : 'Prices'} and pool share
+                      {noLiquidity ? t('initialPrices') : t('prices')} {t('andPoolShare')}
                     </TYPE.subHeader>
                   </RowBetween>{' '}
                   <LightCard padding="1rem" borderRadius={'6px'}>
@@ -394,7 +394,7 @@ export default function AddLiquidity({
             )}
 
             {!account ? (
-              <ButtonLight onClick={toggleWalletModal}>Connect Wallet</ButtonLight>
+              <ButtonLight onClick={toggleWalletModal}>{t('connectWallet')}</ButtonLight>
             ) : (
               <AutoColumn gap={'md'}>
                 {(approvalA === ApprovalState.NOT_APPROVED ||
@@ -412,7 +412,7 @@ export default function AddLiquidity({
                           {approvalA === ApprovalState.PENDING ? (
                             <Dots>Approving {currencies[Field.CURRENCY_A]?.symbol}</Dots>
                           ) : (
-                            'Approve ' + currencies[Field.CURRENCY_A]?.symbol
+                            `${t('approve')} ` + currencies[Field.CURRENCY_A]?.symbol
                           )}
                         </ButtonPrimary>
                       )}
@@ -425,7 +425,7 @@ export default function AddLiquidity({
                           {approvalB === ApprovalState.PENDING ? (
                             <Dots>Approving {currencies[Field.CURRENCY_B]?.symbol}</Dots>
                           ) : (
-                            'Approve ' + currencies[Field.CURRENCY_B]?.symbol
+                            `${t('approve')} ` + currencies[Field.CURRENCY_B]?.symbol
                           )}
                         </ButtonPrimary>
                       )}
@@ -439,7 +439,7 @@ export default function AddLiquidity({
                   error={!isValid && !!parsedAmounts[Field.CURRENCY_A] && !!parsedAmounts[Field.CURRENCY_B]}
                 >
                   <Text fontSize={20} fontWeight={500}>
-                    {error ?? 'Supply'}
+                    {error ?? t('supply')}
                   </Text>
                 </ButtonError>
               </AutoColumn>

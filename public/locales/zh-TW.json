@@ -91,5 +91,7 @@
   "tokenSearchPlaceholder": "搜索名稱或粘貼地址",
   "toleranceExplanation": "降低此限制會降低您搶先的風險。\n但是，這更有可能使您的交易由於正常的價格波動而失敗。",
   "unknownError": "糟糕！\n出現未知錯誤。\n請刷新頁面，或從其他瀏覽器或設備訪問。",
-  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "估計輸出。\n如果價格變化超過{{percentage}}％，您的交易將恢復。"
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "估計輸出。\n如果價格變化超過{{percentage}}％，您的交易將恢復。",
+  "claiming": "認領",
+  "best-v2-lp-tokens-are-required-once-youve-added-liquidity-to-the-symbolone-symboltwo-pool-you-can-stake-your-liquidity-tokens-on-this-page": "需要BEST-V2 LP令牌。\n將流動性添加到{{symbolOne}}-{{symbolTwo}}池後，您就可以在此頁面上投入流動性令牌。"
 }

@@ -2,6 +2,7 @@ import { TransactionResponse } from '@ethersproject/abstract-provider'
 import { JSBI, Token, TokenAmount, WETH, Fraction, Percent, CurrencyAmount } from '@haneko/uniswap-sdk'
 import React, { useCallback, useMemo, useState } from 'react'
 import ReactGA from 'react-ga'
+import { useTranslation } from 'react-i18next'
 import { Redirect, RouteComponentProps } from 'react-router'
 import { ButtonConfirmed } from '../../components/Button'
 import { LightCard } from '../../components/Card'
@@ -40,6 +41,8 @@ function V1PairRemoval({
   token: Token
 }) {
   const { chainId } = useActiveWeb3React()
+  const { t } = useTranslation()
+
   const totalSupply = useTotalSupply(liquidityTokenAmount.token)
   const exchangeETHBalance = useETHBalances([liquidityTokenAmount.token.address])?.[liquidityTokenAmount.token.address]
   const exchangeTokenBalance = useTokenBalance(liquidityTokenAmount.token.address, token)
@@ -96,7 +99,7 @@ function V1PairRemoval({
   return (
     <AutoColumn gap="20px">
       <TYPE.body my={9} style={{ fontWeight: 400 }}>
-        This tool will remove your V1 liquidity and send the underlying assets to your wallet.
+        {t('this-tool-will-remove-your-v1-liquidity-and-send-the-underlying-assets-to-your-wallet')}
       </TYPE.body>
 
       <LightCard>
@@ -113,7 +116,7 @@ function V1PairRemoval({
             disabled={isSuccessfullyRemoved || noLiquidityTokens || isRemovalPending || confirmingRemoval}
             onClick={remove}
           >
-            {isSuccessfullyRemoved ? 'Success' : isRemovalPending ? <Dots>Removing</Dots> : 'Remove'}
+            {isSuccessfullyRemoved ? t('success') : isRemovalPending ? <Dots>{t('removing')}</Dots> : t('remove')}
           </ButtonConfirmed>
         </div>
       </LightCard>
@@ -131,6 +134,8 @@ export default function RemoveV1Exchange({
     params: { address }
   }
 }: RouteComponentProps<{ address: string }>) {
+  const { t } = useTranslation()
+
   const validatedAddress = isAddress(address)
   const { chainId, account } = useActiveWeb3React()
 
@@ -165,7 +170,7 @@ export default function RemoveV1Exchange({
         </AutoRow>
 
         {!account ? (
-          <TYPE.largeHeader>You must connect an account.</TYPE.largeHeader>
+          <TYPE.largeHeader>{t('you-must-connect-an-account')}</TYPE.largeHeader>
         ) : userLiquidityBalance && token && exchangeContract ? (
           <V1PairRemoval
             exchangeContract={exchangeContract}

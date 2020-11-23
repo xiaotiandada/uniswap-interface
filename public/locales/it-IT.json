@@ -91,5 +91,7 @@
   "mining": "Estrazione",
   "toleranceExplanation": "L'abbassamento di questo limite riduce il rischio di andare avanti. \nTuttavia, ciò rende più probabile che la transazione non riesca a causa dei normali movimenti di prezzo.",
   "tokenSearchPlaceholder": "Cerca il nome o incolla l'indirizzo",
-  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "La produzione è stimata. \nSe il prezzo cambia di più del {{percentage}}%, la transazione verrà annullata."
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "La produzione è stimata. \nSe il prezzo cambia di più del {{percentage}}%, la transazione verrà annullata.",
+  "claiming": "Affermare",
+  "best-v2-lp-tokens-are-required-once-youve-added-liquidity-to-the-symbolone-symboltwo-pool-you-can-stake-your-liquidity-tokens-on-this-page": "I gettoni BEST-V2 LP sono obbligatori. \nDopo aver aggiunto la liquidità al pool {{symbolOne}} - {{symbolTwo}} puoi puntare i tuoi gettoni di liquidità su questa pagina."
 }

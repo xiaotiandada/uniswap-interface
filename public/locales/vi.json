@@ -83,5 +83,12 @@
   "decimals": "Số thập phân",
   "enterTokenCont": "Nhập địa chỉ đồng tiền ảo để tiếp tục",
   "priceChange": "Trượt giá dự kiến",
-  "forAtLeast": "cho ít nhất "
+  "forAtLeast": "cho ít nhất ",
+  "invertedRate": "Tỷ giá hối đoái ngược",
+  "bridge": "Cầu",
+  "brokenToken": "Mã thông báo đã chọn không tương thích với Uniswap V1. \nThêm thanh khoản sẽ dẫn đến các quỹ bị khóa.",
+  "mining": "Khai thác mỏ",
+  "noToken": "Không tìm thấy mã thông báo",
+  "tokenSearchPlaceholder": "Tìm kiếm tên hoặc dán địa chỉ",
+  "toleranceExplanation": "Việc hạ thấp giới hạn này sẽ giảm nguy cơ chạy trước của bạn. \nTuy nhiên, điều này làm cho nhiều khả năng giao dịch của bạn sẽ thất bại do biến động giá bình thường."
 }

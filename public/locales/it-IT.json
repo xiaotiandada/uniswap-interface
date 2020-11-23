@@ -83,5 +83,12 @@
   "decimals": "Decimali",
   "enterTokenCont": "Inserire un indirizzo token per continuare",
   "priceChange": "Scostamento del prezzo previsto",
-  "forAtLeast": "per almeno "
+  "forAtLeast": "per almeno ",
+  "invertedRate": "Tasso di cambio invertito",
+  "bridge": "ponte",
+  "brokenToken": "Il token selezionato non è compatibile con Uniswap V1. \nL'aggiunta di liquidità si tradurrà in fondi bloccati.",
+  "noToken": "Nessun token trovato",
+  "mining": "Estrazione",
+  "toleranceExplanation": "L'abbassamento di questo limite riduce il rischio di andare avanti. \nTuttavia, ciò rende più probabile che la transazione non riesca a causa dei normali movimenti di prezzo.",
+  "tokenSearchPlaceholder": "Cerca il nome o incolla l'indirizzo"
 }

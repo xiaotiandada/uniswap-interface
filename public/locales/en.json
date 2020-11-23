@@ -266,5 +266,11 @@
   "missingDependencies": "missing dependencies",
   "missingLiquidityAmount": "missing liquidity amount",
   "weeklyRewards": "Weekly Rewards",
-  "depositingLiquidity": "Depositing Liquidity"
+  "depositingLiquidity": "Depositing Liquidity",
+  "depositedLiquidity": "Deposited liquidity",
+  "when-you-withdraw-your-best-is-claimed-and-your-liquidity-is-removed-from-the-mining-pool": "When you withdraw, your BEST is claimed and your liquidity is removed from the mining pool.",
+  "withdrawing": "Withdrawing",
+  "withdrew": "Withdrew",
+  "partners": "Partners",
+  "medias": "Medias"
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 import partnersMathwallet from '../../assets/images/partners-mathwallet.png'
 import partnersBitkeep from '../../assets/images/partners-bitkeep.png'
 import partnersSafepal from '../../assets/images/partners-safepal.png'
@@ -38,30 +39,34 @@ const partnersList = [
   partnersJfi
 ]
 
-const Footer: React.FC = () => (
-  <StyledFooter>
-    <StyledFooterInner>
-      <StyledFooterItem style={{ alignItems: 'flex-start', marginBottom: 80 }}>
-        <StyledFooterItemTitle>Partners:</StyledFooterItemTitle>
-        <StyledFooterItemContennt>
-          <StyledFooterItemContenntGrid>
-            {partnersList.map((i, idx) => (
-              <StyledFooterItemPartner key={idx}>
-                <img src={i} alt="partners" />
-              </StyledFooterItemPartner>
-            ))}
-          </StyledFooterItemContenntGrid>
-        </StyledFooterItemContennt>
-      </StyledFooterItem>
-      <StyledFooterItem>
-        <StyledFooterItemTitle>Medias:</StyledFooterItemTitle>
-        <StyledFooterItemContennt>
-          <Nav />
-        </StyledFooterItemContennt>
-      </StyledFooterItem>
-    </StyledFooterInner>
-  </StyledFooter>
-)
+const Footer: React.FC = () => {
+  const { t } = useTranslation()
+
+  return (
+    <StyledFooter>
+      <StyledFooterInner>
+        <StyledFooterItem style={{ alignItems: 'flex-start', marginBottom: 80 }}>
+          <StyledFooterItemTitle>{t('partners')}:</StyledFooterItemTitle>
+          <StyledFooterItemContennt>
+            <StyledFooterItemContenntGrid>
+              {partnersList.map((i, idx) => (
+                <StyledFooterItemPartner key={idx}>
+                  <img src={i} alt="partners" />
+                </StyledFooterItemPartner>
+              ))}
+            </StyledFooterItemContenntGrid>
+          </StyledFooterItemContennt>
+        </StyledFooterItem>
+        <StyledFooterItem>
+          <StyledFooterItemTitle>{t('medias')}:</StyledFooterItemTitle>
+          <StyledFooterItemContennt>
+            <Nav />
+          </StyledFooterItemContennt>
+        </StyledFooterItem>
+      </StyledFooterInner>
+    </StyledFooter>
+  )
+}
 
 const StyledFooter = styled.footer`
   align-items: center;

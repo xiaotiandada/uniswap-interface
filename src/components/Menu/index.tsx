@@ -2,6 +2,8 @@ import React, { useRef } from 'react'
 import { BookOpen, Info, MessageCircle, Twitter, Send } from 'react-feather'
 import styled from 'styled-components'
 import { lighten } from 'polished'
+import { useTranslation } from 'react-i18next'
+
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import { useActiveWeb3React } from '../../hooks'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
@@ -89,6 +91,7 @@ const MenuItem = styled(ExternalLink)`
 
 export default function Menu() {
   const { account } = useActiveWeb3React()
+  const { t } = useTranslation()
 
   const node = useRef<HTMLDivElement>()
   const open = useModalOpen(ApplicationModal.MENU)
@@ -123,11 +126,11 @@ export default function Menu() {
           </MenuItem>
           <MenuItem id="link" href="https://t.me/bestswap_com">
             <Info size={14} />
-            Announcement
+            {t('announcement')}
           </MenuItem>
           {account && (
             <ButtonPrimary onClick={openClaimModal} padding="8px 16px" width="100%" borderRadius="6px" mt="0.5rem">
-              Claim BEST
+              {t('claim')} BEST
             </ButtonPrimary>
           )}
         </MenuFlyout>

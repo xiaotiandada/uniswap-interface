@@ -90,5 +90,6 @@
   "symbol": "Símbolo",
   "tokenSearchPlaceholder": "Buscar nombre o pegar dirección",
   "toleranceExplanation": "Bajar este límite disminuye su riesgo de adelantarse. \nSin embargo, esto aumenta las probabilidades de que su transacción falle debido a los movimientos normales de precios.",
-  "unknownError": "¡Ups! \nUn error desconocido ocurrió. \nActualice la página o visite desde otro navegador o dispositivo."
+  "unknownError": "¡Ups! \nUn error desconocido ocurrió. \nActualice la página o visite desde otro navegador o dispositivo.",
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Se estima la producción. \nSi el precio cambia en más del {{percentage}}%, su transacción se revertirá."
 }

@@ -90,5 +90,6 @@
   "symbol": "סֵמֶל",
   "tokenSearchPlaceholder": "חפש שם או הדבק כתובת",
   "toleranceExplanation": "הורדת מגבלה זו מקטינה את הסיכון לריצה קדמית. \nעם זאת, סבירות גבוהה יותר שהעסקה שלך תיכשל עקב תנועות מחירים רגילות.",
-  "unknownError": "אופס! \nאירעה שגיאה לא ידועה. \nאנא רענן את הדף, או בקר בדפדפן או מכשיר אחר."
+  "unknownError": "אופס! \nאירעה שגיאה לא ידועה. \nאנא רענן את הדף, או בקר בדפדפן או מכשיר אחר.",
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "התפוקה מוערכת. \nאם המחיר ישתנה ביותר מ- {{percentage}}% העסקה שלך תוחזר."
 }

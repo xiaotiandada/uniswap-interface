@@ -90,5 +90,6 @@
   "noToken": "Nessun token trovato",
   "mining": "Estrazione",
   "toleranceExplanation": "L'abbassamento di questo limite riduce il rischio di andare avanti. \nTuttavia, ciò rende più probabile che la transazione non riesca a causa dei normali movimenti di prezzo.",
-  "tokenSearchPlaceholder": "Cerca il nome o incolla l'indirizzo"
+  "tokenSearchPlaceholder": "Cerca il nome o incolla l'indirizzo",
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "La produzione è stimata. \nSe il prezzo cambia di più del {{percentage}}%, la transazione verrà annullata."
 }

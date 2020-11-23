@@ -9,7 +9,7 @@
   "send": "發送",
   "pool": "資金池",
   "mining": "挖矿",
-  "bridge": "Bridge",
+  "bridge": "橋",
   "betaWarning": "本產品仍在測試階段。使用者需自負風險。",
   "input": "輸入",
   "output": "輸出",
@@ -90,5 +90,6 @@
   "symbol": "符號",
   "tokenSearchPlaceholder": "搜索名稱或粘貼地址",
   "toleranceExplanation": "降低此限制會降低您搶先的風險。\n但是，這更有可能使您的交易由於正常的價格波動而失敗。",
-  "unknownError": "糟糕！\n出現未知錯誤。\n請刷新頁面，或從其他瀏覽器或設備訪問。"
+  "unknownError": "糟糕！\n出現未知錯誤。\n請刷新頁面，或從其他瀏覽器或設備訪問。",
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "估計輸出。\n如果價格變化超過{{percentage}}％，您的交易將恢復。"
 }

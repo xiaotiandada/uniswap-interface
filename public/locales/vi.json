@@ -90,5 +90,6 @@
   "mining": "Khai thác mỏ",
   "noToken": "Không tìm thấy mã thông báo",
   "tokenSearchPlaceholder": "Tìm kiếm tên hoặc dán địa chỉ",
-  "toleranceExplanation": "Việc hạ thấp giới hạn này sẽ giảm nguy cơ chạy trước của bạn. \nTuy nhiên, điều này làm cho nhiều khả năng giao dịch của bạn sẽ thất bại do biến động giá bình thường."
+  "toleranceExplanation": "Việc hạ thấp giới hạn này sẽ giảm nguy cơ chạy trước của bạn. \nTuy nhiên, điều này làm cho nhiều khả năng giao dịch của bạn sẽ thất bại do biến động giá bình thường.",
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Sản lượng được ước tính. \nNếu giá thay đổi hơn {{percentage}}% thì giao dịch của bạn sẽ hoàn nguyên."
 }

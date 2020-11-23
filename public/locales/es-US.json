@@ -9,7 +9,7 @@
   "send": "Enviar",
   "pool": "Pool",
   "mining": "Mining",
-  "bridge": "Bridge",
+  "bridge": "Puente",
   "betaWarning": "Este proyecto se encuentra en beta. Úselo bajo tu propio riesgo.",
   "input": "Entrada",
   "output": "Salida",
@@ -90,5 +90,6 @@
   "slippageWarning": "Advertencia de deslizamiento",
   "swapAnyway": "Cambiar de todos modos",
   "symbol": "Símbolo",
-  "unknownError": "¡Ups! \nUn error desconocido ocurrió. \nActualice la página o visite desde otro navegador o dispositivo."
+  "unknownError": "¡Ups! \nUn error desconocido ocurrió. \nActualice la página o visite desde otro navegador o dispositivo.",
+  "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Se estima la producción. \nSi el precio cambia en más del {{percentage}}%, su transacción se revertirá."
 }

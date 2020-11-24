@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { useActiveWeb3React } from '../../hooks'
-
+import { useTranslation } from 'react-i18next'
 import Modal from '../Modal'
 import { AutoColumn, ColumnCenter } from '../Column'
 import styled, { ThemeContext } from 'styled-components'
@@ -43,6 +43,8 @@ interface VoteModalProps {
 
 export default function VoteModal({ isOpen, onDismiss, proposalId, support }: VoteModalProps) {
   const { chainId } = useActiveWeb3React()
+  const { t } = useTranslation()
+
   const {
     voteCallback
   }: {
@@ -112,9 +114,9 @@ export default function VoteModal({ isOpen, onDismiss, proposalId, support }: Vo
           </ConfirmedIcon>
           <AutoColumn gap="100px" justify={'center'}>
             <AutoColumn gap="12px" justify={'center'}>
-              <TYPE.largeHeader>Submitting Vote</TYPE.largeHeader>
+              <TYPE.largeHeader>{t('submittingVote')}</TYPE.largeHeader>
             </AutoColumn>
-            <TYPE.subHeader>Confirm this transaction in your wallet</TYPE.subHeader>
+            <TYPE.subHeader>{t('confirm-this-transaction-in-your-wallet')}</TYPE.subHeader>
           </AutoColumn>
         </ConfirmOrLoadingWrapper>
       )}
@@ -129,11 +131,11 @@ export default function VoteModal({ isOpen, onDismiss, proposalId, support }: Vo
           </ConfirmedIcon>
           <AutoColumn gap="100px" justify={'center'}>
             <AutoColumn gap="12px" justify={'center'}>
-              <TYPE.largeHeader>Transaction Submitted</TYPE.largeHeader>
+              <TYPE.largeHeader>{t('transactionSubmitted')}</TYPE.largeHeader>
             </AutoColumn>
             {chainId && (
               <ExternalLink href={getBscScanLink(chainId, hash, 'transaction')} style={{ marginLeft: '4px' }}>
-                <TYPE.subHeader>View transaction on Etherscan</TYPE.subHeader>
+                <TYPE.subHeader>{t('viewTransactionOnEtherscan')}</TYPE.subHeader>
               </ExternalLink>
             )}
           </AutoColumn>

@@ -97,5 +97,9 @@
   "a-minimum-threshhold-of-1-of-the-total-best-supply-is-required-to-submit-proposals": "提交建議書的最低門檻為BEST供給總量的1％",
   "yourBestBreakdown": "您的 BEST 明細",
   "viewBestAnalytics": "查看 BEST 分析",
-  "claimYourBestTokens": "領取您的 BEST 令牌"
+  "claimYourBestTokens": "領取您的 BEST 令牌",
+  "output-is-estimated-you-will-receive-at-least": "估計輸出。\n您至少會收到",
+  "anyone-can-create-an-erc20-token-on-ethereum-with-less-than-em-greater-than-any-less-than-em-greater-than-name-including-creating-fake-versions-of-existing-tokens-and-tokens-that-claim-to-represent-projects-that-do-not-have-a-token": "任何人都可以在以太坊上使用<em>任何</em>名稱創建ERC20令牌，包括創建虛假版本的現有令牌和聲稱代表沒有令牌的項目的令牌。",
+  "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "如果您購買了任意令牌，<strong>您可能無法將其售出。</strong>",
+  "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "獲得的BEST令牌代表Bestswap治理中的有投票權的份額。"
 }

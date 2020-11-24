@@ -97,5 +97,9 @@
   "a-minimum-threshhold-of-1-of-the-total-best-supply-is-required-to-submit-proposals": "Per presentare le proposte è richiesta una soglia minima dell'1% dell'offerta BEST totale",
   "yourBestBreakdown": "La tua analisi di BEST",
   "viewBestAnalytics": "Visualizza BEST Analytics",
-  "claimYourBestTokens": "Richiedi i tuoi token BEST"
+  "claimYourBestTokens": "Richiedi i tuoi token BEST",
+  "output-is-estimated-you-will-receive-at-least": "La produzione è stimata. \nRiceverai almeno",
+  "anyone-can-create-an-erc20-token-on-ethereum-with-less-than-em-greater-than-any-less-than-em-greater-than-name-including-creating-fake-versions-of-existing-tokens-and-tokens-that-claim-to-represent-projects-that-do-not-have-a-token": "Chiunque può creare un token ERC20 su Ethereum con <em>qualsiasi</em> nome, inclusa la creazione di versioni false di token esistenti e token che pretendono di rappresentare progetti che non hanno un token.",
+  "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "Se acquisti un token arbitrario, <strong> potresti non essere in grado di rivenderlo. </strong>",
+  "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "I token BEST guadagnati rappresentano le azioni di voto nella governance di Bestswap."
 }

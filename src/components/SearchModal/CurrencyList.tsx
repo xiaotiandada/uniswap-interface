@@ -3,6 +3,7 @@ import React, { CSSProperties, MutableRefObject, useCallback, useMemo } from 're
 import { FixedSizeList } from 'react-window'
 import { Text } from 'rebass'
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 import { useActiveWeb3React } from '../../hooks'
 import { useSelectedTokenList, WrappedTokenInfo } from '../../state/lists/hooks'
 import { useAddUserToken, useRemoveUserAddedToken } from '../../state/user/hooks'
@@ -102,6 +103,7 @@ function CurrencyRow({
 
   const removeToken = useRemoveUserAddedToken()
   const addToken = useAddUserToken()
+  const { t } = useTranslation()
 
   // only show add or remove buttons if not on selected list
   return (
@@ -120,27 +122,27 @@ function CurrencyRow({
         <FadedSpan>
           {!isOnSelectedList && customAdded ? (
             <TYPE.main fontWeight={500}>
-              Added by user
+              {t('addedByUser')}
               <LinkStyledButton
                 onClick={event => {
                   event.stopPropagation()
                   if (chainId && currency instanceof Token) removeToken(chainId, currency.address)
                 }}
               >
-                (Remove)
+                ({t('remove')})
               </LinkStyledButton>
             </TYPE.main>
           ) : null}
           {!isOnSelectedList && !customAdded ? (
             <TYPE.main fontWeight={500}>
-              Found by address
+              {t('foundByAddress')}
               <LinkStyledButton
                 onClick={event => {
                   event.stopPropagation()
                   if (currency instanceof Token) addToken(currency)
                 }}
               >
-                (Add)
+                ({t('add')})
               </LinkStyledButton>
             </TYPE.main>
           ) : null}

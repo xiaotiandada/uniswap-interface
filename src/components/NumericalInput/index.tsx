@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { escapeRegExp } from '../../utils'
+import { useTranslation } from 'react-i18next'
 
 const StyledInput = styled.input<{ error?: boolean; fontSize?: string; align?: string }>`
   color: ${({ error, theme }) => (error ? theme.red1 : theme.text1)};
@@ -56,6 +57,7 @@ export const Input = React.memo(function InnerInput({
       onUserInput(nextUserInput)
     }
   }
+  const { t } = useTranslation()
 
   return (
     <StyledInput
@@ -67,7 +69,7 @@ export const Input = React.memo(function InnerInput({
       }}
       // universal input options
       inputMode="decimal"
-      title="Token Amount"
+      title={t('tokenAmount')}
       autoComplete="off"
       autoCorrect="off"
       // text-specific options

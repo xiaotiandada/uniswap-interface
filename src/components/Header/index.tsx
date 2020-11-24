@@ -30,6 +30,7 @@ import { Dots } from '../swap/styleds'
 import Modal from '../Modal'
 import UniBalanceContent from './UniBalanceContent'
 import usePrevious from '../../hooks/usePrevious'
+import I18nSwitch from '../I18nSwitch'
 
 const HeaderFrame = styled.div`
   display: flex;
@@ -334,13 +335,13 @@ export default function Header() {
             Vote
           </StyledNavLink> */}
           <StyledExternalLink id={`stake-nav-link`} href={'https://bsc.bestswap.com/farm/'}>
-            Farm <span>↗</span>
+            {t('farm')} <span>↗</span>
           </StyledExternalLink>
           <StyledExternalLink id={`stake-nav-link`} href={'https://www.binance.org/en/bridge'}>
             {t('bridge')} <span>↗</span>
           </StyledExternalLink>
           <StyledExternalLink id={`stake-nav-link`} href={'https://bsc.bestswap.com/info'}>
-            Analytics <span>↗</span>
+            {t('analytics')} <span>↗</span>
           </StyledExternalLink>
         </HeaderLinks>
       </HeaderRow>
@@ -355,7 +356,7 @@ export default function Header() {
             <UNIWrapper onClick={toggleClaimModal}>
               <UNIAmount active={!!account && !availableClaim} style={{ pointerEvents: 'auto' }}>
                 <TYPE.white padding="0 2px">
-                  {claimTxn && !claimTxn?.receipt ? <Dots>Claiming BEST</Dots> : 'Claim BEST'}
+                  {claimTxn && !claimTxn?.receipt ? <Dots>{t('claiming')} BEST</Dots> : `${t('claim')} BEST`}
                 </TYPE.white>
               </UNIAmount>
               <CardNoise />
@@ -399,7 +400,7 @@ export default function Header() {
         <HeaderElementWrap>
           <Settings />
           <Menu />
-          {/* <I18nSwitch /> */}
+          <I18nSwitch />
         </HeaderElementWrap>
       </HeaderControls>
     </HeaderFrame>

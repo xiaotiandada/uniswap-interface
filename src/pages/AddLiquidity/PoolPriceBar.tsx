@@ -1,6 +1,8 @@
 import { Currency, Percent, Price } from '@haneko/uniswap-sdk'
 import React, { useContext } from 'react'
 import { Text } from 'rebass'
+import { useTranslation } from 'react-i18next'
+
 import { ThemeContext } from 'styled-components'
 import { AutoColumn } from '../../components/Column'
 import { AutoRow } from '../../components/Row'
@@ -20,19 +22,21 @@ export function PoolPriceBar({
   price?: Price
 }) {
   const theme = useContext(ThemeContext)
+  const { t } = useTranslation()
+
   return (
     <AutoColumn gap="md">
       <AutoRow justify="space-around" gap="4px">
         <AutoColumn justify="center">
           <TYPE.black>{price?.toSignificant(6) ?? '-'}</TYPE.black>
           <Text fontWeight={500} fontSize={14} color={theme.text2} pt={1}>
-            {currencies[Field.CURRENCY_B]?.symbol} per {currencies[Field.CURRENCY_A]?.symbol}
+            {currencies[Field.CURRENCY_B]?.symbol} {t('per')} {currencies[Field.CURRENCY_A]?.symbol}
           </Text>
         </AutoColumn>
         <AutoColumn justify="center">
           <TYPE.black>{price?.invert()?.toSignificant(6) ?? '-'}</TYPE.black>
           <Text fontWeight={500} fontSize={14} color={theme.text2} pt={1}>
-            {currencies[Field.CURRENCY_A]?.symbol} per {currencies[Field.CURRENCY_B]?.symbol}
+            {currencies[Field.CURRENCY_A]?.symbol} {t('per')} {currencies[Field.CURRENCY_B]?.symbol}
           </Text>
         </AutoColumn>
         <AutoColumn justify="center">
@@ -43,7 +47,7 @@ export function PoolPriceBar({
             %
           </TYPE.black>
           <Text fontWeight={500} fontSize={14} color={theme.text2} pt={1}>
-            Share of Pool
+            {t('shareOfPool')}
           </Text>
         </AutoColumn>
       </AutoRow>

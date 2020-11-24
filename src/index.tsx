@@ -62,7 +62,7 @@ ReactDOM.render(
           <Updaters />
           <ThemeProvider>
             <ThemedGlobalStyle />
-            <BrowserRouter basename="/swap">
+            <BrowserRouter basename={'swap'}>
               <App />
             </BrowserRouter>
           </ThemeProvider>

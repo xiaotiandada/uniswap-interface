@@ -2,6 +2,8 @@ import { Currency, ETHER, JSBI, TokenAmount } from '@haneko/uniswap-sdk'
 import React, { useCallback, useEffect, useState } from 'react'
 import { Plus } from 'react-feather'
 import { Text } from 'rebass'
+import { useTranslation } from 'react-i18next'
+
 import { ButtonDropdownLight } from '../../components/Button'
 import { LightCard } from '../../components/Card'
 import { AutoColumn, ColumnCenter } from '../../components/Column'
@@ -26,6 +28,7 @@ enum Fields {
 
 export default function PoolFinder() {
   const { account } = useActiveWeb3React()
+  const { t } = useTranslation()
 
   const [showSearch, setShowSearch] = useState<boolean>(false)
   const [activeField, setActiveField] = useState<number>(Fields.TOKEN1)
@@ -71,7 +74,7 @@ export default function PoolFinder() {
   const prerequisiteMessage = (
     <LightCard padding="45px 10px">
       <Text textAlign="center">
-        {!account ? 'Connect to a wallet to find pools' : 'Select a token to find your liquidity.'}
+        {!account ? t('connect-to-a-wallet-to-find-pools') : t('select-a-token-to-find-your-liquidity')}
       </Text>
     </LightCard>
   )
@@ -95,7 +98,7 @@ export default function PoolFinder() {
             </Row>
           ) : (
             <Text fontWeight={500} fontSize={20} marginLeft={'12px'}>
-              Select a Token
+              {t('selectAToken')}
             </Text>
           )}
         </ButtonDropdownLight>
@@ -119,7 +122,7 @@ export default function PoolFinder() {
             </Row>
           ) : (
             <Text fontWeight={500} fontSize={20} marginLeft={'12px'}>
-              Select a Token
+              {t('selectAToken')}
             </Text>
           )}
         </ButtonDropdownLight>
@@ -129,10 +132,10 @@ export default function PoolFinder() {
             style={{ justifyItems: 'center', backgroundColor: '', padding: '12px 0px', borderRadius: '6px' }}
           >
             <Text textAlign="center" fontWeight={500}>
-              Pool Found!
+              {t('poolFound')}
             </Text>
             <StyledInternalLink to={`/pool`}>
-              <Text textAlign="center">Manage this pool.</Text>
+              <Text textAlign="center">{t('manageThisPool')}</Text>
             </StyledInternalLink>
           </ColumnCenter>
         )}
@@ -144,9 +147,9 @@ export default function PoolFinder() {
             ) : (
               <LightCard padding="45px 10px">
                 <AutoColumn gap="sm" justify="center">
-                  <Text textAlign="center">You don’t have liquidity in this pool yet.</Text>
+                  <Text textAlign="center">{t('you-dont-have-liquidity-in-this-pool-yet')}</Text>
                   <StyledInternalLink to={`/add/${currencyId(currency0)}/${currencyId(currency1)}`}>
-                    <Text textAlign="center">Add liquidity.</Text>
+                    <Text textAlign="center">{t('addLiquidity')}</Text>
                   </StyledInternalLink>
                 </AutoColumn>
               </LightCard>
@@ -154,9 +157,9 @@ export default function PoolFinder() {
           ) : validPairNoLiquidity ? (
             <LightCard padding="45px 10px">
               <AutoColumn gap="sm" justify="center">
-                <Text textAlign="center">No pool found.</Text>
+                <Text textAlign="center">{t('noPoolFound')}</Text>
                 <StyledInternalLink to={`/add/${currencyId(currency0)}/${currencyId(currency1)}`}>
-                  Create pool.
+                  {t('createPool')}
                 </StyledInternalLink>
               </AutoColumn>
             </LightCard>
@@ -164,7 +167,7 @@ export default function PoolFinder() {
             <LightCard padding="45px 10px">
               <AutoColumn gap="sm" justify="center">
                 <Text textAlign="center" fontWeight={500}>
-                  Invalid pair.
+                  {t('invalidPair')}
                 </Text>
               </AutoColumn>
             </LightCard>
@@ -172,7 +175,7 @@ export default function PoolFinder() {
             <LightCard padding="45px 10px">
               <AutoColumn gap="sm" justify="center">
                 <Text textAlign="center">
-                  Loading
+                  {t('loading')}
                   <Dots />
                 </Text>
               </AutoColumn>

@@ -2,6 +2,7 @@ import React from 'react'
 import { AutoColumn } from '../Column'
 import { RowBetween } from '../Row'
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 import { TYPE, StyledInternalLink } from '../../theme'
 import DoubleCurrencyLogo from '../DoubleLogo'
 import { ETHER, JSBI, TokenAmount } from '@haneko/uniswap-sdk'
@@ -73,6 +74,8 @@ const BottomSection = styled.div<{ showBackground: boolean }>`
 `
 
 export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) {
+  const { t } = useTranslation()
+
   const token0 = stakingInfo.tokens[0]
   const token1 = stakingInfo.tokens[1]
 
@@ -123,14 +126,14 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
 
         <StyledInternalLink to={`/best/${currencyId(currency0)}/${currencyId(currency1)}`} style={{ width: '100%' }}>
           <ButtonPrimary padding="8px" borderRadius="6px">
-            {isStaking ? 'Manage' : 'Deposit'}
+            {isStaking ? t('manage') : t('deposit')}
           </ButtonPrimary>
         </StyledInternalLink>
       </TopSection>
 
       <StatContainer>
         <RowBetween>
-          <TYPE.white> Total deposited</TYPE.white>
+          <TYPE.white> {t('totalDeposited')}</TYPE.white>
           <TYPE.white>
             {valueOfTotalStakedAmountInUSDC
               ? `$${valueOfTotalStakedAmountInUSDC.toFixed(0, { groupSeparator: ',' })}`
@@ -138,7 +141,7 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
           </TYPE.white>
         </RowBetween>
         <RowBetween>
-          <TYPE.white> Pool rate </TYPE.white>
+          <TYPE.white> {t('poolRate')} </TYPE.white>
           <TYPE.white>{`${stakingInfo.totalRewardRate
             ?.multiply(`${60 * 60 * 24 * 7}`)
             ?.toFixed(0, { groupSeparator: ',' })} BEST / week`}</TYPE.white>
@@ -150,7 +153,7 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
           <Break />
           <BottomSection showBackground={true}>
             <TYPE.black color={'white'} fontWeight={500}>
-              <span>Your rate</span>
+              <span>{t('yourRate')}</span>
             </TYPE.black>
 
             <TYPE.black style={{ textAlign: 'right' }} color={'white'} fontWeight={500}>

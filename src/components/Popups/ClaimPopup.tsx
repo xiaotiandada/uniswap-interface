@@ -12,6 +12,7 @@ import {
   useToggleSelfClaimModal,
   useToggleShowClaimPopup
 } from '../../state/application/hooks'
+import { useTranslation } from 'react-i18next'
 
 import { useUserHasAvailableClaim, useUserUnclaimedAmount } from '../../state/claim/hooks'
 import { TYPE } from '../../theme'
@@ -54,6 +55,7 @@ const UniToken = styled.img`
 
 export default function ClaimPopup() {
   const { account } = useActiveWeb3React()
+  const { t } = useTranslation()
 
   // dont store these in persisted state yet
   const showClaimPopup: boolean = useShowClaimPopup()
@@ -92,7 +94,7 @@ export default function ClaimPopup() {
               <span role="img" aria-label="party">
                 🎉
               </span>{' '}
-              BEST has arrived{' '}
+              BEST {t('hasArrived')}{' '}
               <span role="img" aria-label="party">
                 🎉
               </span>
@@ -103,7 +105,7 @@ export default function ClaimPopup() {
           </AutoColumn>
           <AutoColumn style={{ zIndex: 10 }} justify="center">
             <ButtonPrimary padding="8px" borderRadius="6px" width={'fit-content'} onClick={toggleSelfClaimModal}>
-              Claim your BEST tokens
+              {t('claimYourBestTokens')}
             </ButtonPrimary>
           </AutoColumn>
         </StyledClaimPopup>

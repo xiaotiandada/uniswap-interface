@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
 import { Token, TokenAmount, WETH } from '@haneko/uniswap-sdk'
+import { useTranslation } from 'react-i18next'
 
 import { Text } from 'rebass'
 import { AutoColumn } from '../Column'
@@ -18,6 +19,7 @@ interface PositionCardProps extends RouteComponentProps<{}> {
 
 function V1PositionCard({ token, V1LiquidityBalance }: PositionCardProps) {
   const theme = useContext(ThemeContext)
+  const { t } = useTranslation()
 
   const { chainId } = useActiveWeb3React()
 
@@ -48,7 +50,7 @@ function V1PositionCard({ token, V1LiquidityBalance }: PositionCardProps) {
         <AutoColumn gap="8px">
           <RowBetween marginTop="10px">
             <ButtonSecondary width="68%" as={Link} to={`/migrate/v1/${V1LiquidityBalance.token.address}`}>
-              Migrate
+              {t('migrate')}
             </ButtonSecondary>
 
             <ButtonSecondary
@@ -57,7 +59,7 @@ function V1PositionCard({ token, V1LiquidityBalance }: PositionCardProps) {
               as={Link}
               to={`/remove/v1/${V1LiquidityBalance.token.address}`}
             >
-              Remove
+              {t('remove')}
             </ButtonSecondary>
           </RowBetween>
         </AutoColumn>

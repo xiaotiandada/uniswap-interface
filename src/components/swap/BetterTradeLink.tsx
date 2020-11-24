@@ -1,6 +1,7 @@
 import { stringify } from 'qs'
 import React, { useContext, useMemo } from 'react'
 import { useLocation } from 'react-router'
+import { useTranslation } from 'react-i18next'
 import { Text } from 'rebass'
 import { ThemeContext } from 'styled-components'
 import useParsedQueryString from '../../hooks/useParsedQueryString'
@@ -27,6 +28,7 @@ function VersionLinkContainer({ children }: { children: React.ReactNode }) {
 export default function BetterTradeLink({ version }: { version: Version }) {
   const location = useLocation()
   const search = useParsedQueryString()
+  const { t } = useTranslation()
 
   const linkDestination = useMemo(() => {
     return {
@@ -40,9 +42,9 @@ export default function BetterTradeLink({ version }: { version: Version }) {
 
   return (
     <VersionLinkContainer>
-      There is a better price for this trade on{' '}
+      {t('there-is-a-better-price-for-this-trade-on')}{' '}
       <StyledInternalLink to={linkDestination}>
-        <b>Uniswap {version.toUpperCase()} ↗</b>
+        <b>Bestswap {version.toUpperCase()} ↗</b>
       </StyledInternalLink>
     </VersionLinkContainer>
   )
@@ -52,6 +54,7 @@ export function DefaultVersionLink() {
   const location = useLocation()
   const search = useParsedQueryString()
   const version = useToggledVersion()
+  const { t } = useTranslation()
 
   const linkDestination = useMemo(() => {
     return {
@@ -65,9 +68,11 @@ export function DefaultVersionLink() {
 
   return (
     <VersionLinkContainer>
-      Showing {version.toUpperCase()} price.{' '}
+      {t('showing')} {version.toUpperCase()} price.{' '}
       <StyledInternalLink to={linkDestination}>
-        <b>Switch to Uniswap {DEFAULT_VERSION.toUpperCase()} ↗</b>
+        <b>
+          {t('switchTo')} Bestswap {DEFAULT_VERSION.toUpperCase()} ↗
+        </b>
       </StyledInternalLink>
     </VersionLinkContainer>
   )

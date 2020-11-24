@@ -101,5 +101,7 @@
   "output-is-estimated-you-will-receive-at-least": "Die Ausgabe wird geschätzt. \nSie erhalten mindestens",
   "anyone-can-create-an-erc20-token-on-ethereum-with-less-than-em-greater-than-any-less-than-em-greater-than-name-including-creating-fake-versions-of-existing-tokens-and-tokens-that-claim-to-represent-projects-that-do-not-have-a-token": "Jeder kann ein ERC20-Token auf Ethereum mit <em>jedem</em> Namen erstellen, einschließlich der Erstellung gefälschter Versionen von vorhandene Token und Token, die behaupten, Projekte darzustellen, die kein Token haben.",
   "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "Wenn Sie einen beliebigen Token kaufen, <strong> können Sie ihn möglicherweise nicht zurückverkaufen. </strong>",
-  "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "Verdiente BEST-Token repräsentieren stimmberechtigte Anteile an der Bestswap-Governance."
+  "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "Verdiente BEST-Token repräsentieren stimmberechtigte Anteile an der Bestswap-Governance.",
+  "back": "Zurück",
+  "remove": "Entfernen"
 }

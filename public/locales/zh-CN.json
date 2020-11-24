@@ -218,7 +218,7 @@
   "read-more-about-bestswap-governance": "阅读有关Bestswap治理的更多信息",
   "read-more-about-providing-liquidity": "阅读有关提供流动性的更多信息",
   "receive": "接收",
-  "remove": "去掉",
+  "remove": "移除",
   "removing": "拆下",
   "select-a-token-to-find-your-liquidity": "选择一个代币以找到您的流动性。",
   "selectAToken": "选择一个令牌",
@@ -289,7 +289,7 @@
   "addedByUser": "由用户添加",
   "alwaysMakeSureTheUrlIs": "始终确保网址为",
   "an-update-is-available-for-the-token-list": "令牌列表有更新",
-  "back": "背部",
+  "back": "返回",
   "balanceTitle": "平衡",
   "bookmark-it-to-be-safe": "加入安全标签。",
   "browseLists": "浏览清单",
@@ -363,5 +363,8 @@
   "you-can-either-vote-on-each-proposal-yourself-or-delegate-your-votes-to-a-third-party": "您可以自己对每个提案进行投票，也可以将投票委托给第三方。",
   "your-transaction-will-revert-if-there-is-a-large-unfavorable-price-movement-before-it-is-confirmed": "如果在确认之前价格出现较大的不利变动，则您的交易将恢复。",
   "yourPoolTokens": "您的泳池代币",
-  "yourPosition": "你的职位"
+  "yourPosition": "你的职位",
+  "enterARecipient": "输入收件人",
+  "enterAnAmount": "输入金额",
+  "maxUpper": "最大"
 }

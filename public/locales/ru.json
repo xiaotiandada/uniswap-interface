@@ -101,5 +101,7 @@
   "output-is-estimated-you-will-receive-at-least": "Производительность оценена. \nВы получите не менее",
   "anyone-can-create-an-erc20-token-on-ethereum-with-less-than-em-greater-than-any-less-than-em-greater-than-name-including-creating-fake-versions-of-existing-tokens-and-tokens-that-claim-to-represent-projects-that-do-not-have-a-token": "Кто угодно может создать токен ERC20 в Ethereum с <em>любым</em> именем, включая создание поддельных версий существующие токены и токены, которые утверждают, что представляют проекты, у которых нет токена.",
   "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "Если вы купите произвольный токен, <strong> возможно, вы не сможете его продать обратно </strong>.",
-  "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "Заработанные токены BEST представляют собой голосующие акции в управлении Bestswap."
+  "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "Заработанные токены BEST представляют собой голосующие акции в управлении Bestswap.",
+  "back": "Назад",
+  "remove": "удалять"
 }

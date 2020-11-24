@@ -101,5 +101,7 @@
   "output-is-estimated-you-will-receive-at-least": "Producția este estimată. \nVeți primi cel puțin",
   "anyone-can-create-an-erc20-token-on-ethereum-with-less-than-em-greater-than-any-less-than-em-greater-than-name-including-creating-fake-versions-of-existing-tokens-and-tokens-that-claim-to-represent-projects-that-do-not-have-a-token": "Oricine poate crea un simbol ERC20 pe Ethereum cu numele <em>oricare</em>, inclusiv crearea de versiuni false ale jetoane existente și jetoane care pretind că reprezintă proiecte care nu au jeton.",
   "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "Dacă achiziționați un simbol arbitrar, <strong> este posibil să nu îl puteți revinde. </strong>",
-  "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "Token-urile BEST câștigate reprezintă acțiuni de vot în guvernanța Bestswap."
+  "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "Token-urile BEST câștigate reprezintă acțiuni de vot în guvernanța Bestswap.",
+  "back": "Înapoi",
+  "remove": "Elimina"
 }

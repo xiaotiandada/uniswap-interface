@@ -363,5 +363,9 @@
   "connect-to-a-wallet": "Connect to a wallet",
   "new-to-binance-smart-chain": "New to Binance Smart Chain?",
   "learn-more-about-wallets": "Learn more about wallets",
-  "error": "Error"
+  "error": "Error",
+  "enterAnAmount": "Enter an amount",
+  "enterARecipient": "Enter a recipient",
+  "maxUpper": "MAX",
+  "burned": "Burned"
 }

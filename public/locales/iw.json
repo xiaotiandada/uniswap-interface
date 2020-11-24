@@ -101,5 +101,7 @@
   "output-is-estimated-you-will-receive-at-least": "התפוקה מוערכת. \nתקבל לפחות",
   "anyone-can-create-an-erc20-token-on-ethereum-with-less-than-em-greater-than-any-less-than-em-greater-than-name-including-creating-fake-versions-of-existing-tokens-and-tokens-that-claim-to-represent-projects-that-do-not-have-a-token": "כל אחד יכול ליצור אסימון ERC20 ב- Ethereum עם <em> כל שם </em>, כולל יצירת גרסאות מזויפות של אסימונים ואסימונים קיימים המתיימרים לייצג פרויקטים שאין להם אסימון.",
   "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "אם אתה רוכש אסימון שרירותי, <strong> ייתכן שלא תוכל למכור אותו בחזרה. </strong>",
-  "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "אסימוני BEST שנצברו מייצגים מניות הצבעה בממשל Bestswap."
+  "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "אסימוני BEST שנצברו מייצגים מניות הצבעה בממשל Bestswap.",
+  "back": "חזור",
+  "remove": "לְהַסִיר"
 }

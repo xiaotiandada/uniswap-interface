@@ -254,7 +254,7 @@
   "disconnect": "断开",
   "liquidity": "流动性",
   "manage": "管理",
-  "medias": "媒体类",
+  "medias": "媒体",
   "missingDependencies": "缺少依赖项",
   "missingLiquidityAmount": "流动资金不足",
   "partners": "伙伴",
@@ -272,5 +272,8 @@
   "withdrawing": "提现",
   "withdrew": "撤回",
   "yourRate": "您的费率",
-  "yourTransactionsWillAppearHere": "您的交易将出现在这里..."
+  "yourTransactionsWillAppearHere": "您的交易将出现在这里...",
+  "yourBestBreakdown": "您的 BEST 明细",
+  "viewBestAnalytics": "查看 BEST 分析",
+  "claimYourBestTokens": "领取您的 BEST 令牌"
 }

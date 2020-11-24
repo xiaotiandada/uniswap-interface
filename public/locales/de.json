@@ -94,5 +94,8 @@
   "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Die Ausgabe wird geschätzt. \nWenn sich der Preis um mehr als {{percentage}}% ändert, wird Ihre Transaktion zurückgesetzt.",
   "claiming": "Anspruch erheben",
   "best-v2-lp-tokens-are-required-once-youve-added-liquidity-to-the-symbolone-symboltwo-pool-you-can-stake-your-liquidity-tokens-on-this-page": "BEST-V2 LP-Token sind erforderlich. \nSobald Sie dem {{symbolOne}} - {{symbolTwo}} Pool Liquidität hinzugefügt haben, können Sie Ihre Liquiditätstoken auf dieser Seite einsetzen.",
-  "a-minimum-threshhold-of-1-of-the-total-best-supply-is-required-to-submit-proposals": "Für die Einreichung von Vorschlägen ist ein Mindestschwellenwert von 1% des gesamten BEST-Angebots erforderlich"
+  "a-minimum-threshhold-of-1-of-the-total-best-supply-is-required-to-submit-proposals": "Für die Einreichung von Vorschlägen ist ein Mindestschwellenwert von 1% des gesamten BEST-Angebots erforderlich",
+  "yourBestBreakdown": "Ihre BEST-Aufschlüsselung",
+  "viewBestAnalytics": "BEST Analytics anzeigen",
+  "claimYourBestTokens": "Fordern Sie Ihre BEST-Token an"
 }

@@ -94,5 +94,8 @@
   "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "Производительность оценена. \nЕсли цена изменится более чем на {{percentage}}%, ваша транзакция будет отменена.",
   "claiming": "Требуя",
   "best-v2-lp-tokens-are-required-once-youve-added-liquidity-to-the-symbolone-symboltwo-pool-you-can-stake-your-liquidity-tokens-on-this-page": "Требуются токены BEST-V2 LP. \nПосле того, как вы добавили ликвидность в пул {{symbolOne}} - {{symbolTwo}}, вы можете разместить свои токены ликвидности на этой странице.",
-  "a-minimum-threshhold-of-1-of-the-total-best-supply-is-required-to-submit-proposals": "Для подачи предложений требуется минимальный порог в 1% от общего предложения BEST."
+  "a-minimum-threshhold-of-1-of-the-total-best-supply-is-required-to-submit-proposals": "Для подачи предложений требуется минимальный порог в 1% от общего предложения BEST.",
+  "yourBestBreakdown": "Ваш BEST разбой",
+  "viewBestAnalytics": "Посмотреть BEST Analytics",
+  "claimYourBestTokens": "Получите свои BEST токены"
 }

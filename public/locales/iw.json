@@ -94,5 +94,8 @@
   "output-is-estimated-if-the-price-changes-by-more-than-percentage-your-transaction-will-revert": "התפוקה מוערכת. \nאם המחיר ישתנה ביותר מ- {{percentage}}% העסקה שלך תוחזר.",
   "claiming": "בטענה",
   "best-v2-lp-tokens-are-required-once-youve-added-liquidity-to-the-symbolone-symboltwo-pool-you-can-stake-your-liquidity-tokens-on-this-page": "נדרשים אסימונים של BEST-V2 LP. \nלאחר שהוספת נזילות למאגר {{symbolOne}} - {{symbolTwo}} תוכל להמר על אסימוני הנזילות שלך בדף זה.",
-  "a-minimum-threshhold-of-1-of-the-total-best-supply-is-required-to-submit-proposals": "על הגשת ההצעות נדרש סף מינימום של 1% מסך היצע ה- BEST"
+  "a-minimum-threshhold-of-1-of-the-total-best-supply-is-required-to-submit-proposals": "על הגשת ההצעות נדרש סף מינימום של 1% מסך היצע ה- BEST",
+  "yourBestBreakdown": "התמוטטות שלך ב- BEST",
+  "viewBestAnalytics": "צפה ב- BEST Analytics",
+  "claimYourBestTokens": "תבע בעלות על אסימוני BEST שלך"
 }

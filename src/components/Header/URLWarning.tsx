@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 
 import { AlertTriangle, X } from 'react-feather'
 import { useURLWarningToggle, useURLWarningVisible } from '../../state/user/hooks'
@@ -25,11 +26,12 @@ export const StyledClose = styled(X)`
 export default function URLWarning() {
   const toggleURLWarning = useURLWarningToggle()
   const showURLWarning = useURLWarningVisible()
+  const { t } = useTranslation()
 
   return isMobile ? (
     <PhishAlert isActive={showURLWarning}>
       <div style={{ display: 'flex' }}>
-        <AlertTriangle style={{ marginRight: 6 }} size={12} /> Make sure the URL is
+        <AlertTriangle style={{ marginRight: 6 }} size={12} /> {t('makeSureTheUrlIs')}
         <code style={{ padding: '0 4px', display: 'inline', fontWeight: 'bold' }}>bsc.bestswap.com</code>
       </div>
       <StyledClose size={12} onClick={toggleURLWarning} />
@@ -37,9 +39,9 @@ export default function URLWarning() {
   ) : window.location.hostname === 'bsc.bestswap.com' ? (
     <PhishAlert isActive={showURLWarning}>
       <div style={{ display: 'flex' }}>
-        <AlertTriangle style={{ marginRight: 6 }} size={12} /> Always make sure the URL is
-        <code style={{ padding: '0 4px', display: 'inline', fontWeight: 'bold' }}>bsc.bestswap.com</code> - bookmark it
-        to be safe.
+        <AlertTriangle style={{ marginRight: 6 }} size={12} /> {t('alwaysMakeSureTheUrlIs')}
+        <code style={{ padding: '0 4px', display: 'inline', fontWeight: 'bold' }}>bsc.bestswap.com</code> -{' '}
+        {t('bookmark-it-to-be-safe')}
       </div>
       <StyledClose size={12} onClick={toggleURLWarning} />
     </PhishAlert>

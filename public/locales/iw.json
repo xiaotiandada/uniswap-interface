@@ -103,5 +103,7 @@
   "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "אם אתה רוכש אסימון שרירותי, <strong> ייתכן שלא תוכל למכור אותו בחזרה. </strong>",
   "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "אסימוני BEST שנצברו מייצגים מניות הצבעה בממשל Bestswap.",
   "back": "חזור",
-  "remove": "לְהַסִיר"
+  "remove": "לְהַסִיר",
+  "burned": "נשרף",
+  "farm": "חווה חקלאית"
 }

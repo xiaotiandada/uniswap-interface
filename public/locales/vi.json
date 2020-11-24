@@ -103,5 +103,7 @@
   "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "Nếu bạn mua một mã thông báo tùy ý, <strong> bạn có thể không bán lại được. </strong>",
   "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "Các mã thông báo TỐT NHẤT kiếm được đại diện cho cổ phần có quyền biểu quyết trong quản trị Bestswap.",
   "back": "Trở lại",
-  "remove": "Tẩy"
+  "remove": "Tẩy",
+  "burned": "Bị bỏng",
+  "farm": "Nông trại"
 }

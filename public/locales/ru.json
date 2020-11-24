@@ -103,5 +103,7 @@
   "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "Если вы купите произвольный токен, <strong> возможно, вы не сможете его продать обратно </strong>.",
   "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "Заработанные токены BEST представляют собой голосующие акции в управлении Bestswap.",
   "back": "Назад",
-  "remove": "удалять"
+  "remove": "удалять",
+  "burned": "Сгорел",
+  "farm": "Ферма"
 }

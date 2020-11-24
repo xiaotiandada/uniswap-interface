@@ -103,5 +103,7 @@
   "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "Dacă achiziționați un simbol arbitrar, <strong> este posibil să nu îl puteți revinde. </strong>",
   "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "Token-urile BEST câștigate reprezintă acțiuni de vot în guvernanța Bestswap.",
   "back": "Înapoi",
-  "remove": "Elimina"
+  "remove": "Elimina",
+  "burned": "Ars",
+  "farm": "Fermă"
 }

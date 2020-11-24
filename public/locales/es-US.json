@@ -103,5 +103,7 @@
   "if-you-purchase-an-arbitrary-token-less-than-strong-greater-than-you-may-be-unable-to-sell-it-back-less-than-strong-greater-than": "Si compra un token arbitrario, <strong> es posible que no pueda volver a venderlo. </strong>",
   "earned-best-tokens-represent-voting-shares-in-uniswap-governance": "Los tokens BEST obtenidos representan acciones con derecho a voto en la gobernanza de Bestswap.",
   "back": "atrás",
-  "remove": "Eliminar"
+  "remove": "Eliminar",
+  "burned": "Quemado",
+  "farm": "Granja"
 }

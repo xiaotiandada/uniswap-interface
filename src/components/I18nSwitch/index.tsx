@@ -7,7 +7,6 @@ import { ReactComponent as I18nIcon } from '../../assets/svg/i18n.svg'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 import { ApplicationModal } from '../../state/application/actions'
 import { useModalOpen, useToggleModal } from '../../state/application/hooks'
-
 import { ExternalLink } from '../../theme'
 // import { ButtonPrimary } from '../Button'
 
